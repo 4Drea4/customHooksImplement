@@ -1,6 +1,6 @@
 
 export interface UsePagination {
-    items: number;
+    totalItems: number;
     itemsPerPage?: number;
     startPage?: number;
 }
@@ -14,6 +14,6 @@ export interface UsePaginationResults{
     setPage: (pageNumber: number) => void;
     nextPage: () => void;
     prevPage: () => void;
-    willNextPage: boolean;
-    willPrevPagge: boolean;
+    canNextPage: boolean;
+    canPrevPagge: boolean;
 }
