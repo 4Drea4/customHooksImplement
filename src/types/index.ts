@@ -2,7 +2,7 @@
 export interface UsePagination {
     totalItems: number;
     itemsPerPage?: number;
-    startPage?: number;
+    initialPage?: number;
 }
 
 export interface UsePaginationResults{
